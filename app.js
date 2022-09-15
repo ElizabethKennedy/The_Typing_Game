@@ -9,7 +9,7 @@ let quotes_array = ["The you that you think is you is not you.",
 "and is dreaming she is the Prince, who has fallen asleep",
 "and is dreaming he is a sleeping Princess. -Lon Milo DuQuette"];
  
-// selecting required elements
+/* Selecting required elements and defining variables via html query selector method */
 let timer_text = document.querySelector(".curr_time");
 let accuracy_text = document.querySelector(".curr_accuracy");
 let error_text = document.querySelector(".curr_errors");
@@ -33,32 +33,37 @@ let current_quote = "";
 let quoteNo = 0;
 let timer = null;
 
+/* Each quote is taken from a pre-defined array. A variable keeps track of 
+the current quote and increments whenever a new one is requested */
+
 function updateQuote() {
     quote_text.textContent = null;
     current_quote = quotes_array[quoteNo];
    
     // separate each character and make an element
-    // out of each of them to individually style them
+    // out of each in order to individually style
     current_quote.split('').forEach(char => {
       const charSpan = document.createElement('span')
       charSpan.innerText = char
       quote_text.appendChild(charSpan)
     })
    
-    // roll over to the first quote
+    // roll over to 1st quote
     if (quoteNo < quotes_array.length - 1)
       quoteNo++;
     else
       quoteNo = 0;
   }
-
+   // the following will be typed whenever user changes anything in the input box
   function processCurrentText() {
  
-    // get current input text and split it
+    // get current input text and use split method for comparison against quote text array sentences
     curr_input = input_area.value;
     curr_input_array = curr_input.split('');
    
-    // increment total characters typed
+    // every time user incorrectly types a character, the errors variable is incremented
+    // accuracy percentage is calculated by dividing num of correctly typed characters 
+    // by total num of characters typed by user
     characterTyped++;
    
     errors = 0;

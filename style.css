@@ -12,6 +12,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background:linear-gradient (180deg, rgb(127, 0, 255), rgb(0, 127, 255), rgb(0, 234, 255));
+    
   }
    
   .heading {
@@ -108,6 +110,7 @@ h1 {
     display: flex;
     border-radius: 9999px;
     box-shadow:0em;
+    background:linear-gradient (180deg, rgb(127, 0, 255), rgb(0, 127, 255), rgb(0, 234, 255));
 }
 
 .container {
@@ -182,6 +185,7 @@ td {
 }
 h1{
     background-color: rgb(197, 184, 184);
+    padding: 11px 16px;
 }
 
 .col{
@@ -190,19 +194,20 @@ h1{
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 234, 255);
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .space{
     padding-bottom: 3rem;
 }
 .key{
-    background-color: rgb(7, 128, 249);
-    margin: 0 0.03rem;
-    padding: 10px 15px;
-    border-radius: 9999px;
-    box-shadow: 0 0.50rem lightgray;
+  background-color: rgb(7, 128, 249);
+  margin: 0 0.05rem;
+  padding: 11px 16px;
+  border-radius: 9999px;
+  box-shadow: 0 0.50rem lightgray;
 }
+
 .sentenceP, .feedbackP{
     display: none;
     text-align: center;
