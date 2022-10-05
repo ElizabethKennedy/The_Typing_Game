@@ -1,4 +1,4 @@
-let TIME_LIMIT = 60;
+let TIME_LIMIT = (90);
  
 // define quotes to be used
 let quotes_array = ["The you that you think is you is not you.",
