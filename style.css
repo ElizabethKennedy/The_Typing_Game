@@ -55,7 +55,7 @@ body {
   }
    
   .quote {
-    background-color: #ccda46;
+    background-color: #7d0cda;
     font-size: 1.5rem;
     margin: 10px;
     padding: 10px;
@@ -73,6 +73,12 @@ body {
     border: 0px;
     box-shadow: black 5px 8px 5px;
   }
+
+  .quote {
+  font-style: italic;
+  color: white;
+}
+
    
   .restart_btn {
     display: none;
@@ -202,10 +208,12 @@ h1{
 }
 .key{
   background-color: rgb(7, 128, 249);
-  margin: 0 0.05rem;
-  padding: 11px 16px;
+  margin: 2 2rem;
+  padding: 11px 25px;
+  border-block-color: lightgray;
   border-radius: 9999px;
   box-shadow: 0 0.50rem lightgray;
+  float: clear;
 }
 
 .sentenceP, .feedbackP{
